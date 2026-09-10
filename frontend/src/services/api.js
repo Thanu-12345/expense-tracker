@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api";
-
+const API_URL = "https://expense-tracker-backend-7ptf.onrender.com/api";
 // Get all transactions
 export const getTransactions = async () => {
     const response = await fetch(`${API_URL}/transactions`);
