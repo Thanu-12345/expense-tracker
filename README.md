@@ -1,48 +1,53 @@
 # 💰 Expense Tracker
 
-A full-stack Expense Tracker application built using React, Node.js, Express.js, and MySQL.
+A full-stack Expense Tracker application built using React, Node.js, Express, and MySQL. It allows users to manage income and expenses, search and filter transactions, and visualize expense distribution through charts.
 
-The application allows users to manage income and expenses, categorize transactions, search and filter transaction history, and visualize expenses using charts.
+## 🌐 Live Project
+
+### 🚀 Live Website
+https://expense-tracker-one-gamma-62.vercel.app/
+
+### 🔗 Backend API
+https://expense-tracker-backend-7ptf.onrender.com/
 
 ## ✨ Features
 
 - Add income and expense transactions
-- Edit transactions
+- Edit existing transactions
 - Delete transactions
 - Categorize transactions
 - Search transactions
 - Filter by transaction type
 - Filter by category
-- Calculate total income
-- Calculate total expenses
-- Calculate current balance
+- View total income
+- View total expenses
+- View current balance
 - Expense distribution chart
-- Responsive design
-- Loading and error handling
+- Responsive user interface
+- Persistent data storage using MySQL
 
 ## 🛠️ Technologies Used
 
 ### Frontend
-
 - React.js
 - Vite
 - Recharts
-- HTML
 - CSS
-- JavaScript
 
 ### Backend
-
 - Node.js
 - Express.js
-- MySQL
-- mysql2
+- REST API
 - CORS
-- dotenv
 
 ### Database
-
 - MySQL
+- Aiven
+
+### Deployment
+- Vercel — Frontend
+- Render — Backend
+- Aiven — Database
 
 ## 📁 Project Structure
 
@@ -51,32 +56,22 @@ expense-tracker/
 │
 ├── backend/
 │   ├── config/
-│   │   └── db.js
 │   ├── controllers/
-│   │   └── transactionController.js
 │   ├── models/
-│   │   └── transactionModel.js
 │   ├── routes/
-│   │   └── transactionRoutes.js
 │   ├── .env
-│   ├── .gitignore
 │   ├── package.json
 │   └── server.js
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── ExpenseChart.jsx
-│   │   │   ├── SummaryCards.jsx
-│   │   │   ├── TransactionForm.jsx
-│   │   │   └── TransactionList.jsx
 │   │   ├── services/
-│   │   │   └── api.js
 │   │   ├── App.jsx
 │   │   ├── App.css
-│   │   └── index.css
-│   └── package.json
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── database/
 │   └── schema.sql
